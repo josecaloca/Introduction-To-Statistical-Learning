@@ -1,0 +1,13 @@
+version: '3'
+services:
+  data-science-dev:
+    build:
+      context: .
+      dockerfile: ISLP.dockerfile
+      
+    container_name: ISLP-environment  # Set the desired container name
+    
+    ports:
+      - "8080:8888"
+    volumes:
+      - ./workspace:/home/Documents/workspace
