@@ -16,8 +16,11 @@ This Docker Compose configuration allows you to quickly set up a JupyterLab envi
 
 2. Navigate to the directory containing the `docker-compose.yml` file.
 
-3. Open a terminal and run the following command to start the JupyterLab environment:
+3. Open a terminal and run the following commands to start the JupyterLab environment:
 
+    ```bash
+    docker-compose build
+    ```
     ```bash
     docker-compose up
     ```
