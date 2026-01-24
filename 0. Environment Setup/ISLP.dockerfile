@@ -20,7 +20,7 @@ RUN /bin/bash -c "source virtual_env/bin/activate && uv pip install --no-cache-d
 
 
 # Final Stage: set up runtime environment with minimal footprint
-FROM debian:stable-20230814-slim
+FROM debian:12-slim
 
 # Install only runtime dependencies
 RUN apt-get update && \
