@@ -10,4 +10,4 @@ services:
     ports:
       - "8080:8888"
     volumes:
-      - ./workspace:/home/Documents/workspace
+      - ./workspace:/home/Documents/workspace:Z
