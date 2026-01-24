@@ -1,5 +1,5 @@
 # Builder Stage: install dependencies and build the virtual environment
-FROM debian:stable-20230814-slim AS builder
+FROM debian:12-slim AS builder
 
 # Install Python 3.11, venv, and pip without extra packages/caches
 RUN apt-get update && \
